@@ -256,7 +256,7 @@ computeDiffStats <- function(data, batchEffect = NULL, applyLog2Transform = TRUE
 getContrastResults <- function(diffstats, contrast, controlGroup = NULL, ann, applyLog2Transform = TRUE, 
                                writeFile= FALSE)
 {
-  cat("Obtaining results for contrast", contrast, "\n")
+  message("Obtaining results for contrast", contrast, "\n")
   
   contrast <- contrast %>%
     gsub(pattern = " ", replacement = "_") %>%
